@@ -1,0 +1,44 @@
+.main {
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.row {
+  height: inherit;
+}
+
+.col {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 20.5rem;
+  height: 24rem;
+  border-radius: 14px;
+  box-shadow: 1px 1px 1px hsl(0, 0%, 59%), -1px 1px 1px hsl(0, 0%, 59%);
+}
+
+.card__header {
+  width: inherit;
+  height: 35%;
+}
+
+.card__body {
+  background-color: yellow;
+  width: inherit;
+  height: 45%;
+}
+
+.card__footer {
+  width: inherit;
+  height: 20%;
+}
