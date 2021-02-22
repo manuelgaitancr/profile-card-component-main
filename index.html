@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="icon"
@@ -14,11 +13,13 @@
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
-    <header class="header" id="header"></header>
+    <header class="header bg__black py" id="header">
+      <h1 class="text__center">Challenge 🚀</h1>
+    </header>
     <main class="main" id="main">
       <div class="container">
-        <div class="card">
-          <div class="card">
+        <div class="card__container">
+          <div class="card line__height">
             <div class="card__header">
               <img
                 class="card__image"
@@ -28,23 +29,31 @@
             </div>
             <div class="card__body">
               <div class="card__text">
-                <h5>Victor Crest <span>26</span></h5>
-                <p>London</p>
+                <h4 class="display--1">
+                  Victor Crest <span class="text__light display--2">26</span>
+                </h4>
+                <p><span class="text__light">London</span></p>
               </div>
             </div>
             <div class="card__footer">
               <div class="card__container--statistics">
                 <div class="card__statistics">
-                  <h5>80K</h5>
-                  <p><span>Folowers</span></p>
+                  <h4 class="display--1">80K</h4>
+                  <p class="text__size--1">
+                    <span class="text__light">Folowers</span>
+                  </p>
                 </div>
                 <div class="card__statistics">
-                  <h5>803K</h5>
-                  <p><span>Likes</span></p>
+                  <h4 class="display--1">803K</h4>
+                  <p class="text__size--1">
+                    <span class="text__light">Likes</span>
+                  </p>
                 </div>
                 <div class="card__statistics">
-                  <h5>1.4K</h5>
-                  <p><span>Photos</span></p>
+                  <h4 class="display--1">1.4K</h4>
+                  <p class="text__size--1">
+                    <span class="text__light">Photos</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -52,6 +61,22 @@
         </div>
       </div>
     </main>
-    <footer class="footer" id="footer"></footer>
+    <footer class="footer bg__black" id="footer">
+      <p>
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          ref="no-referrer"
+          >Frontend Mentor</a
+        >
+      </p>
+      <p>
+        Coded by
+        <a href="https://manuelgaitan.com" target="_blank" ref="no-referrer"
+          >Manuel Gaitán</a
+        >
+      </p>
+    </footer>
   </body>
 </html>

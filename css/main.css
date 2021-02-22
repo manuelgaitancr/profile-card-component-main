@@ -1,12 +1,24 @@
 .container {
-  height: 100vh;
+  background-image: url("../images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  background-position: -250px -500px;
+  height: 80vh;
+}
+
+.card__container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: inherit;
+  background-image: url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: 675px 350px;
 }
 
 .card {
+  bottom: 50px;
   background-color: white;
+  box-shadow: 0 0 3px 0px hsl(187deg 42% 31%);
   width: 22rem;
   height: 22rem;
   border-radius: 10px;
@@ -65,4 +77,59 @@
   width: inherit;
   padding: 15px 0;
   text-align: center;
+}
+
+@media (max-width: 374.98px) {
+  .card {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .container {
+    background-position: -808px -498px;
+  }
+
+  .card__container {
+    background-position: 78px 298px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424.98px) {
+  .container {
+    background-position: -808px -498px;
+  }
+
+  .card__container {
+    background-position: 118px 318px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767.98px) {
+  .container {
+    background-position: -600px -600px;
+  }
+
+  .card__container {
+    background-position: 250px 250px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .container {
+    background-position: -550px -550px;
+  }
+
+  .card__container {
+    background-position: 375px 375px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439.98px) {
+  .container {
+    background-position: -475px -500px;
+  }
+
+  .card__container {
+    background-position: 400px 350px;
+  }
 }
